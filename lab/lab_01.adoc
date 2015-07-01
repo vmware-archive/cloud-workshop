@@ -1,0 +1,76 @@
+= Lab 1 - Getting Started with Spring Boot
+
+. In your browser, visit http://start.spring.io.
+
+. Fill out the *Project metadata* fields as follows:
++
+Group:: `io.spring.pivotal`
+Artifact:: `hello`
+Description:: `Hello Spring Boot`
+Package Name:: `io.pivotal.spring.hello`
+Type:: Gradle Project
+Packaging:: Jar
+Java Version:: 1.8
+Language:: Java
+Spring Boot Version 1.2.4
+
+. In the *Project dependencies* section, check the following:
++
+* Web
+* Actuator
+
+. Click the *Generate Project* button. Your browser will download a zip file.
+Unpack that zip file at `$COURSE_HOME/labs/hello`.
+
+. Import the project's `build.gradle` into your editor/IDE of choice.
+
+. Add a `@RestController` annotation to the class `io.pivotal.spring.hello.Application`.
+
+. Add the following request handler to the class `io.pivotal.spring.hello.Application`:
++
+[source,java]
+----
+import org.springframework.web.bind.annotation.*;
+@RequestMapping("/")
+public String hello() {
+    return "Hello World!";
+}
+----
+
+*Congratulations!*
+You've just completed your first Spring Boot application.
+
+== Build and Run with Embedded Apache Tomcat
+
+Spring Boot will embed Apache Tomcat by default.
+
+. Change to the lab directory:
++
+----
+$ cd `$COURSE_HOME/labs/hello`
+----
+
+. Build the application:
++
+----
+$ gradle build
+----
+
+. Run the application:
++
+----
+$ java -jar build/libs/hello-0.0.1-SNAPSHOT.jar
+----
++
+You should see the application start up an embedded Apache Tomcat server on port 8080:
++
+----
+2015-05-03 13:20:51.690  INFO 2465 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2015-05-03 13:20:51.691  INFO 2465 --- [           main] i.p.s.hello.Application   : Started HelloSpringBootApplication in 3.023 seconds (JVM running for 3.432)
+----
+
+. Visit the application in the browser (http://localhost:8080), and you should see the following:
++
+----
+Hello World!
+----

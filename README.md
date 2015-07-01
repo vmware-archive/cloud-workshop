@@ -29,7 +29,7 @@ Cloud Workshop
     
     
 ## Prerequisites
-- Install Java SDK 1.8+ link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[oracle]
+- Install [Oracle Java SDK 1.8+] (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 - Install GVM:
 ```
 $ curl -s get.gvmtool.net | bash
