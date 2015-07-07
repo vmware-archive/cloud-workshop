@@ -20,7 +20,8 @@ Spring Boot Version 1.2.4
 * Actuator
 
 . Click the *Generate Project* button. Your browser will download a zip file.
-Unpack that zip file at `$COURSE_HOME/labs/hello`.
+
+Unpack that zip file at `$COURSE_HOME/hello`.
 
 . Import the project's `build.gradle` into your editor/IDE of choice.
 
@@ -47,7 +48,7 @@ Spring Boot will embed Apache Tomcat by default.
 . Change to the lab directory:
 +
 ----
-$ cd `$COURSE_HOME/labs/hello`
+$ cd `$COURSE_HOME/hello`
 ----
 
 . Build the application:

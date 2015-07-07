@@ -42,3 +42,10 @@ $ brew install mongodb rabbitmq redis
 - Make sure [Spring Cloud CLI is installed] (https://github.com/spring-cloud/spring-cloud-cli)
 - Familiarity with link:http://www.spring.io[Spring IO]
 - Check Maven is installed and repo is downloaded [TODO]
+
+
+To follow along you will need to download cloud-workspace
+
+    git clone https://github.com/Pivotal-Field-Engineering/cloud-workspace
+    
+It will be referenced as $COURSE_HOME 
