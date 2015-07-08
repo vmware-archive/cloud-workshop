@@ -49,3 +49,6 @@ To follow along you will need to download cloud-workspace
     git clone https://github.com/Pivotal-Field-Engineering/cloud-workspace
     
 It will be referenced as $COURSE_HOME 
+
+[Getting Started with Spring Boot] (lab/lab_01.adoc)
+[Spring Boot Trader] (trader/README.md)

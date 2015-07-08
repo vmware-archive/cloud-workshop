@@ -29,6 +29,12 @@ String greeting;
 return String.format("%s World!", greeting);
 ----
 
+. Add import
++
+----
+import org.springframework.beans.factory.annotation.*
+----
+
 . Build the application:
 +
 ----
@@ -115,3 +121,6 @@ Salut World!
 ----
 
 . Visit http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html to learn more about this outcome and the entire priority scheme for conflict resolution.
+
+
+link:lab_03.adoc[Introspection, Monitoring, and Metrics using Spring Boot Actuator]

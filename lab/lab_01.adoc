@@ -75,3 +75,5 @@ You should see the application start up an embedded Apache Tomcat server on port
 ----
 Hello World!
 ----
+
+link:lab_02.adoc[Externalizing Configuration with Spring Boot]
