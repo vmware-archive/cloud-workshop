@@ -1,0 +1,9 @@
+---
+applications:
+ - name: test
+   memory: 512M
+   instances: 1
+   buildpack: https://github.com/cfmobile/java-buildpack
+   path: target/test-1.0-SNAPSHOT-runnable.jar
+   services:
+    - apigateway-dashboard

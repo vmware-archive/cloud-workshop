@@ -1,0 +1,7 @@
+---
+applications:
+ - name: oauth2-resource
+   memory: 512M
+   instances: 1
+   buildpack: https://github.com/cfmobile/java-buildpack
+   path: target/oauth2-1.0-SNAPSHOT-runnable.jar
