@@ -1,0 +1,8 @@
+---
+applications:
+ - name: oauth2-sso
+   memory: 512M
+   instances: 1
+   buildpack: https://github.com/cfmobile/java-buildpack
+   path: target/oauth2-sso-1.0-SNAPSHOT-runnable.jar
+

@@ -1,0 +1,17 @@
+localResourcesDir: ${project.basedir}/src/main/resources
+loggerNamePrefix: oauth2-resource
+baseApiPath: api
+applicationId: oauth2-resource
+server.port: 8082
+security.basic.enabled: false
+enableSourceModificationApi: true
+
+spring.oauth2:
+  client:
+    clientId: oauth_showcase_authorization_code
+    clientSecret: secret
+    accessTokenUri: ${AUTH_DOMAIN}/oauth/token
+    userAuthorizationUri: ${AUTH_DOMAIN}/oauth/authorize
+  resource:
+    jwt.keyUri: ${AUTH_DOMAIN}/token_key
+ 
